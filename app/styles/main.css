@@ -20,7 +20,7 @@ will be correctly compiled during `gulp serve` and `gulp`
  */
 
 html, body {
-  background-color: white;
+  background-color: transparent;
   font-family: 'Biryani', sans-serif;
   margin: 0;
   padding: 0;
@@ -38,9 +38,9 @@ p {
 }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
+  margin:0;
 }
 
 h1 {
@@ -59,12 +59,14 @@ small, .font_small {font-size: 0.618em;}
 header {
   height: 100px;
   padding-left: 40px;
+  background-color: white;
 }
 
 header > h4 {
   font-weight: 800;
   font-size: 20px;
   z-index: 10;
+  padding-top: 40px;
 }
 
 .cb-hero {
@@ -83,10 +85,23 @@ header > h4 {
   color: #FFF99B;
   position: absolute;
   top: -400px;
-  z-index: 0;
+  z-index: 1;
   left: 190px;
 }
 
 .cb-hero__job-description {
+  padding-top: 200px;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  letter-spacing: 10px;
+  animation-delay: 1s;
+}
 
+.cb-three-canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }

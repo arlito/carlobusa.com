@@ -6,7 +6,7 @@
 var scene = new THREE.Scene();
 
 // Create a basic perspective camera
-var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/500, 0.1, 300 );
+var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 0.1, 300 );
 camera.position.z = 4;
 
 // Create a renderer with Antialiasing
@@ -16,7 +16,7 @@ var renderer = new THREE.WebGLRenderer({antialias:true});
 renderer.setClearColor("#FFFFFF");
 
 // Configure renderer size
-renderer.setSize( window.innerWidth, 500 );
+renderer.setSize( window.innerWidth, window.innerHeight );
 
 // Append Renderer to DOM
 $( "div.cb-three-canvas" ).append( renderer.domElement );
@@ -88,3 +88,14 @@ var render = function () {
 };
 
 render();
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+    
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    
+}
