@@ -22,13 +22,15 @@ will be correctly compiled during `gulp serve` and `gulp`
 html, body {
   background-color: transparent;
   font-family: 'Biryani', sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-weight: 300;
   line-height: 1.45;
   color: #333;
   font-size: 1em;
   width: 100%;
+  overflow: hidden;
+
 }
 
 html {font-size: 1.125em;}
@@ -67,36 +69,39 @@ header > h4 {
   font-size: 20px;
   z-index: 10;
   padding-top: 40px;
+  letter-spacing: 3.17px;
 }
 
-.cb-hero {
-  height: 500px;
-}
+/*.cb-hero {*/
+  /*height: 100%;*/
+/*}*/
 
 .cb-services {
   height: 500px;
-  color: #ffffff;
-  background-color: #FF7373;
+  /*color: #ffffff;*/
+  /*background-color: #FA998A;*/
+  background-color: #FFFFFF;
 }
 
 .cb-hero__letter {
-  font-size: 800px;
-  font-weight: 800;
   color: #FFF99B;
-  position: absolute;
-  top: -400px;
+  position: relative;
+  top: -70px;
   z-index: 1;
   left: 190px;
 }
 
 .cb-hero__job-description {
-  padding-top: 200px;
+  padding-top: 250px;
   z-index: 100;
   width: 100%;
   text-align: center;
   position: relative;
   letter-spacing: 10px;
   animation-delay: 1s;
+  font-size: 22px;
+  /*padding-left: 30px;*/
+  /*padding-right: 30px;*/
 }
 
 .cb-three-canvas {
@@ -104,4 +109,12 @@ header > h4 {
   z-index: -1;
   top: 0;
   left: 0;
+}
+
+.cb-header__contacts {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  animation-delay: 1.4s;
+  display: block;
 }

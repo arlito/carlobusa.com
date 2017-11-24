@@ -44,23 +44,66 @@
 
 
   </head>
+  <!-- Start of Async Drift Code -->
+  <script>
+      !function() {
+          var t;
+          if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+                  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+                  t.factory = function(e) {
+                      return function() {
+                          var n;
+                          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+                      };
+                  }, t.methods.forEach(function(e) {
+                  t[e] = t.factory(e);
+              }), t.load = function(t) {
+                  var e, n, o, i;
+                  e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+                      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+                      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+              });
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('47yr4rv8tux5');
+  </script>
+  <!-- End of Async Drift Code -->
   <body>
 
     <header>
-      <h4 class="">CARLO BUSA</h4>
+      <h4 >CARLO BUSA</h4>
+      <div class="cb-hero__letter">
+
+        <svg width="631px" height="429px" viewBox="0 0 631 429" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Desktop" transform="translate(-222.000000, 0.000000)" fill="#FFF99B">
+              <path d="M319.694654,323.911635 C254.564559,254.153006 222,158.773561 222,37.7704403 C222,-36.2861145 236.711907,-102.902954 266.136164,-162.082075 C295.56042,-221.261197 339.365537,-268.041757 397.55283,-302.425157 C455.740123,-336.808558 526.820125,-354 610.794969,-354 C645.839588,-354 677.081729,-351.18986 704.522327,-345.569497 C731.962925,-339.949133 761.552043,-330.526901 793.290566,-317.302516 L793.290566,-179.438994 C737.086931,-206.548983 677.908697,-220.103774 615.754088,-220.103774 C569.468741,-220.103774 528.804368,-209.028517 493.759748,-186.877673 C458.715129,-164.726828 431.440244,-134.145897 411.934277,-95.1339623 C392.428309,-56.1220272 382.675472,-12.1516073 382.675472,36.7786164 C382.675472,114.802487 402.842356,177.286767 443.17673,224.233333 C483.511103,271.179899 539.383291,294.65283 610.794969,294.65283 C643.194711,294.65283 675.098061,289.859063 706.505975,280.271384 C737.913889,270.683705 771.139657,256.633007 806.184277,238.118868 L852.8,368.047799 C814.449284,387.884376 774.115516,402.926888 731.797484,413.175786 C689.479453,423.424684 649.145684,428.549057 610.794969,428.549057 C481.857217,428.549057 384.824749,393.670265 319.694654,323.911635 Z" id="C"></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+
+
+
     </header>
 
-    <div class="cb-hero__letter animated fadeInDownBig">
-      C
-    </div>
+
+
     <section class="cb-hero">
       <div class="cb-three-canvas"></div>
       <h4 class="cb-hero__job-description animated zoomIn">WEB DEVELOPMENT <br /> & CONSULTING</h4>
-      <button> Contact Me</button>
+      <small class="cb-header__contacts animated slideInUp">
+        <strong>hello</strong>@carlobusa.com<br/>
+        +33 (0)6 60 47 16 80 <br/>
+        <strong>Nice</strong>, France
+      </small>
+      <!--<button> Contact Me</button>-->
     </section>
-    <section class="cb-services">
-
-    </section>
+    <!--<section class="cb-services"></section>-->
 
     <script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
