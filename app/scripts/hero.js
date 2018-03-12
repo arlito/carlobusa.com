@@ -78,8 +78,6 @@ var render = function () {
         increment = 0.005;
     }
     
-    console.log(`camera position:${camera.position.z} increment;${increment}`);
-    
     camera.position.z += increment;
     camera.position.x += increment;
     
